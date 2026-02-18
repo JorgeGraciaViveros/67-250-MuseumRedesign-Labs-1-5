@@ -1,0 +1,90 @@
+/* * {
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    margin: 5px;
+  } */
+  
+
+/* roboto from lab 2 step 5 */
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+/* lab 2 step 6 */
+  #webname {
+    background-color: #92ad70;
+  }
+
+  header {
+    color: #B91C1C;
+  }
+
+  nav a {
+    text-decoration: none;
+    color:aqua;
+    margin-right: 15px;
+  }
+
+/* for the Buy tickets nav class step 7 */
+  nav a.cta {
+    background-color: #070707;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+
+  /* styling the table in the tickets page step 8 */
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+    width: fit-content;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+/* step 9 form styling */
+  form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+    }
+  
+    .main {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+      }
+  }
+  
+
+  /* lab 3 part 6 hidding table ticket */
+
+  #ticketTable {
+    display: none;
+  }

@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+
 
     <link rel="stylesheet" href="../static/style.css">
-
-    <title>Tickets</title>
+    <title>Checkout</title>
 </head>
 
-<body>
+<body onload="addYear()">
 
     <header>
       <h1 id="webname">MuseumName</h1>
@@ -27,42 +28,28 @@
         <!-- <a href="tickets.html">Tickets</a> -->
         <a href="tickets.html" class="cta">Buy Tickets</a>
       </nav>
-      
     </header>
   
     <div class="main">
-      <h2>Buy Tickets</h2>
+      <h2>Checkout</h2>
   
-      <table>
-        <tr>
-          <th>Ticket Type</th>
-          <th>Description</th>
-          <th>$Price$</th>
-        </tr>
-        <tr>
-          <td>Adult</td>
-          <td>General admission for ages 18 and over</td>
-          <td>$15</td>
-        </tr>
-        <tr>
-          <td>Student</td>
-          <td>Student ID required</td>
-          <td>$10</td>
-        </tr>
-        <tr>
-          <td>Child</td>
-          <td>Ages 3-17</td>
-          <td>$8</td>
-        </tr>
-      </table>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
   
-      <p>
-        <a href="checkout.html">Proceed to Checkout</a>
-      </p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+  
+        <label for="quantity">Ticket Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+  
+        <button type="submit">Submit</button>
+      </form>
     </div>
   
     <footer>
-      <p>&copy; 2026 MuseumName. All rights reserved.</p>
+      <p id="copyYear"></p>
+
     </footer>
   
   </body>
