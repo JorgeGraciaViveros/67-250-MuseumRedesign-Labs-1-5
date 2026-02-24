@@ -87,6 +87,19 @@
 
   #ticketTable {
     display: none;
-  } 
+  }
 
+  /* lab 4 part 3 */
+
+  #comparisonSection {
+    display: none;
+  }
+
+  /* lab 4 part 4 */
+  #longText {
+    display: none;
+  }
   
+  #readLessBtn {
+    display: none;
+  }

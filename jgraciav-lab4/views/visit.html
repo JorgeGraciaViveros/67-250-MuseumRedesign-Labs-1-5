@@ -16,7 +16,7 @@
     <title>Visits</title>
 </head>
 
-<body onload="addYear()">
+<body>
 
     <header>
       <h1 id="webname">MuseumName</h1>
@@ -49,11 +49,17 @@
         For public transport, you mak take the bus to Forbes Ave and walk 2 blocks to the main entrance.<br>
         Paid parking is available in nearby garages and street parking may be available
       </p>
+
+      <!-- lab 4 part 5 option B -->
+      <h3>Check Your ZIP Code</h3>
+      <label for="zipInput">ZIP Code:</label>
+      <input type="text" id="zipInput" maxlength="5" placeholder="e.g., 15213">
+      <button type="button" onclick="lookupZip()">Check</button>
+      <p id="zipResult"></p>
     </div>
   
     <footer>
-      <p id="copyYear"></p>
-
+      <p>&copy; 2026 MuseumName. All rights reserved.</p>
     </footer>
   
   </body>
