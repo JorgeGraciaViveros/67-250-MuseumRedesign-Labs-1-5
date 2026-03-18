@@ -9,9 +9,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- increment 5.1 leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+     <link rel="stylesheet" href="../static/style.css">
+
+     <!-- js for leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script src="../static/script.js" defer></script>
-  <link rel="stylesheet" href="../static/style.css">
+  
+
+
+  
+
+     
 
   <title>Visit</title>
 </head>
@@ -60,7 +74,7 @@
       </div>
 
       <!-- item2: map -->
-      <div class="item2">
+      <!-- <div class="item2">
         <h3>Find Us</h3>
         <div class="mapContainer">
           <iframe
@@ -69,6 +83,12 @@
             allowfullscreen>
           </iframe>
         </div>
+      </div> -->
+
+      <!-- 5.1 increment -->
+      <div class="item2">
+        <h3>Find Us</h3>
+        <div id="map"></div>
       </div>
 
     </div>

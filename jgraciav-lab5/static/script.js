@@ -313,3 +313,41 @@ function getAdvice() {
       console.log("Advice API error:", error);
     });
 }
+
+
+
+
+
+
+// 5.1
+
+function loadLeafletMap() {
+  const mapElement = document.getElementById("map");
+  if (!mapElement) return;
+
+  if (typeof L === "undefined") {
+    console.log("Leaflet did not load.");
+    return;
+  }
+
+  if (mapElement._leaflet_id) return;
+
+  const museumLat = 40.4443;
+  const museumLng = -79.9436;
+
+  const map = L.map("map").setView([museumLat, museumLng], 15);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
+
+  L.marker([museumLat, museumLng])
+    .addTo(map)
+    .bindPopup("Museum Location")
+    .openPopup();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  loadLeafletMap();
+});
